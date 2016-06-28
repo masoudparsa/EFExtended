@@ -5,10 +5,10 @@ using System.Web;
 
 namespace EF6SeconLevelCache
 {
-    public static class GeneratePersonRendom
+    public  class GeneratePersonRendom
     {
 
-        public static string GetBarcode()
+        public static  string GetBarcode()
         {
             Random rnd = new Random();
             string barcode = string.Empty;

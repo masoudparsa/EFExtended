@@ -67,17 +67,16 @@ namespace EF6SeconLevelCache.Controllers
                         personExistObj.Name = GeneratePersonRendom.GetName();
                         personExistObj.Tel = "09125270217";
                         personList.Add(personExistObj);
-                      
                         counter++;
                     }
 
                 }
                 EntityFramework.Utilities.EFBatchOperation.For(context, context.Persons).InsertAll(personList);
-              
+            
           
 
             }
-
+            
            // context.Persons.Delete();
             return View();
         }
